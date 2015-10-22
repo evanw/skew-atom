@@ -1,0 +1,4 @@
+'body.platform-win32, body.platform-linux':
+  'ctrl-;': 'skew:show-diagnostics'
+'body.platform-darwin':
+  'cmd-;': 'skew:show-diagnostics'

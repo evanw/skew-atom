@@ -21,29 +21,36 @@
     'name': 'keyword.skew'
   }
   {
-    'match': '\\b(?:bool|double|dynamic|float|int|string|void|[A-Z][A-Za-z0-9_]*(?:\\.[A-Z][A-Za-z0-9_]*[a-z][A-Za-z0-9_]*)*)\\b(?:&lt;.*?>(?!>))?'
-    'name': 'storage.type.skew'
+    'match': '\\b(?:bool|double|dynamic|float|fn|int|string|void|[A-Z][A-Za-z0-9_]*(?:\\.[A-Z][A-Za-z0-9_]*[a-z][A-Za-z0-9_]*)*)\\b(?:&lt;.*?>(?!>))?'
+    'name': 'entity.name.type.skew'
   }
   {
-    'match': '\\bdef\\b(?:\\s+([A-Za-z0-9_\\-\\+\\*/%!^&amp;|~=&gt;&lt;\\[\\]\\{\\}\\.]+))?'
+    'match': '\\b(?:class|enum|interface|namespace)\\b(?:\\s+([A-Za-z0-9_\\.]+))?'
     'name': 'keyword.skew'
     'captures':
       '1':
-        'name': 'entity.name.function.skew'
-  }
-  {
-    'match': '\\b(?:catch|class|const|enum|for|interface|namespace|over|var)\\b(?:\\s+([A-Za-z0-9_\\.]+))?'
-    'name': 'keyword.skew'
-    'captures':
-      '1':
-        'name': 'entity.name.function.skew'
+        'name': 'entity.name.type.skew'
   }
   {
     'match': '^\\s*\\btype\\b(?:\\s+([A-Za-z0-9_\\.]+))?'
     'name': 'keyword.skew'
     'captures':
       '1':
+        'name': 'entity.name.type.skew'
+  }
+  {
+    'match': '\\b(?:def|over)\\b(?:\\s+([A-Za-z0-9_\\-\\+\\*/%!^&amp;|~=&gt;&lt;\\[\\]\\{\\}\\.]+))?'
+    'name': 'keyword.skew'
+    'captures':
+      '1':
         'name': 'entity.name.function.skew'
+  }
+  {
+    'match': '\\b(?:catch|const|for|var)\\b(?:\\s+([A-Za-z0-9_\\.]+))?'
+    'name': 'keyword.skew'
+    'captures':
+      '1':
+        'name': 'entity.name.variable.skew'
   }
   {
     'begin': '\''
