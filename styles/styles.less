@@ -1,0 +1,28 @@
+@import 'ui-variables';
+
+.skew-tooltip {
+  position: absolute;
+  padding: 5px 8px;
+  font-family: @font-family;
+  font-size: @font-size;
+  border-radius: @component-border-radius;
+  pointer-events: none;
+  background: mix(@syntax-background-color, @syntax-text-color, 90%);
+  color: @syntax-text-color;
+  border: 1px solid fade(@syntax-text-color, 25%);
+  white-space: pre-wrap;
+}
+
+.skew-source {
+  color: @text-color-subtle;
+}
+
+.skew-error {
+  font-weight: bold;
+  color: #FF0000;
+}
+
+.skew-warning {
+  font-weight: bold;
+  color: #BFBF00;
+}

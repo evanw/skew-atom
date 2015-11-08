@@ -256,8 +256,8 @@ class EditorAttachment
     privateScrollView = @element.rootElement.querySelector('.scroll-view')
     bounds = privateScrollView.getBoundingClientRect()
     return {
-      left: Math.round(bounds.left) - @editor.displayBuffer.getScrollLeft()
-      top: Math.round(bounds.top) - @editor.displayBuffer.getScrollTop()
+      left: Math.round(bounds.left) - @editor.getScrollLeft()
+      top: Math.round(bounds.top) - @editor.getScrollTop()
     }
 
   pixelPositionToBufferPosition: (position) ->
