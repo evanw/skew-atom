@@ -1,6 +1,6 @@
 {
   "name": "skew",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Syntax highlighting for Skew (http://skew-lang.org)",
   "repository": "https://github.com/evanw/skew-atom",
   "license": "MIT",
