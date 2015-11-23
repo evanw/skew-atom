@@ -25,14 +25,7 @@
     'name': 'entity.name.type.skew'
   }
   {
-    'match': '\\b(?:class|enum|interface|namespace)\\b(?:\\s+([A-Za-z0-9_\\.]+))?'
-    'name': 'keyword.skew'
-    'captures':
-      '1':
-        'name': 'entity.name.type.skew'
-  }
-  {
-    'match': '^\\s*\\btype\\b(?:\\s+([A-Za-z0-9_\\.]+))?'
+    'match': '\\b(?:class|enum|flags|interface|namespace|type)\\b(?:\\s+([A-Za-z0-9_\\.]+))?'
     'name': 'keyword.skew'
     'captures':
       '1':
